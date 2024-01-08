@@ -68,8 +68,9 @@
   }
 /*  products  */
   section#products .wrap ul{
-  display: initial;
+  /*! display: initial; */
   margin: 30px auto;
+  flex-wrap: initial;
   }
   section#products .wrap ul li{
   width: 100%;
