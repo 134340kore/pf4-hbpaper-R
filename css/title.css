@@ -1,0 +1,32 @@
+#title {
+}
+#title .wrap {
+  max-width: 100%;
+}
+#title .wrap .witem{
+  height: 100%;
+  gap: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#title .wrap .witem:not(:first-child){
+  display: none;
+}
+#title .wrap .witem1 {
+  background-image: url(../img/img2.jpg);
+  color: white;
+}
+#title .wrap .witem2 {
+
+}
+#title .wrap .witem3 {
+
+}
+#title .wrap h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+#title .wrap p {
+  
+}

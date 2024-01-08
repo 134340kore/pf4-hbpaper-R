@@ -1,0 +1,90 @@
+footer {
+   background-color: #ffc048;
+   border-top: 1px solid black;
+   padding-bottom: 15px;
+ }
+ footer .wrap {
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   padding-bottom: 50px;
+   max-width: 100%;
+   padding: 0 calc((100% - 1520px) / 2);
+ }
+ footer .wrap h1 {
+ 
+ }
+ 
+ footer .wrap ul.pnb {
+   width: 60%;
+ }
+ footer .wrap ul.pnb li {
+   
+ }
+footer .wrap ul.pnb li a:hover{
+  color: #365b00;
+  font-weight: bold;
+}
+ footer .wrap ul.pnb li a {
+   color: #000;
+   display: block;
+   line-height: 3;
+ }
+ footer .wrap ul.pnb li:first-child a{
+   padding-right:15px; 
+ }
+ footer .wrap ul.pnb li:not(:first-child) a{
+   padding: 0 15px;
+ }
+ 
+ footer .wrap div{
+   width: 40%;
+   justify-content: end;
+ }
+ footer .wrap div ul.fnb{
+ 
+ }
+ footer .wrap div ul.fnb li{
+   
+ }
+ footer .wrap div ul.fnb li a{
+   color: #000;
+   display: flex;
+   line-height: 3;
+ }
+ footer .wrap div ul.fnb li:first-child a{
+   padding-right:15px; 
+ }
+ footer .wrap div ul.fnb li:not(:first-child) a{
+   padding: 0 15px;
+ }
+ footer .wrap div select{
+   background-color: #fff;
+   color: #000;
+   height: 30px;
+   width: 140px;
+   display: flex;
+   margin: auto 0;
+   text-align: center;
+ }
+ footer .wrap div select option{
+ 
+ }
+ footer .wrap a.blog {
+   position: absolute;
+   right: 0;
+   top: 51px;
+   font-size: 0;
+   background-image: url(../img/blog_btn.png);
+   width: 41px;
+   height: 41px;
+   right: calc((100% - 1520px) / 2);
+ }
+ footer .wrap address {
+   width: 100%;
+   color: #353535;
+ }
+ footer .wrap  p {
+   color: #353535;
+ }
+ 
