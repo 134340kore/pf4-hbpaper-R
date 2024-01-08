@@ -68,7 +68,6 @@
   }
 /*  products  */
   section#products .wrap ul{
-  /*! display: initial; */
   margin: 30px auto;
   flex-wrap: initial;
   }
