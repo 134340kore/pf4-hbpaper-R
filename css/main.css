@@ -101,6 +101,7 @@ section#products .wrap ul li {
   width: calc(100% / 4);
   margin-bottom: 20px;
   display: flex;
+  padding: 30px 0;
 }
 section#products .wrap ul li a {
   
