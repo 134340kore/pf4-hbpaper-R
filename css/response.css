@@ -85,6 +85,21 @@
   section#products .wrap ul li:not(:first-child) a{
     display: none;
   }  
+  section#products .wrap > a{
+  display: flex;
+  background-color: #77ab32;
+  font-size: 24px;
+  justify-content: center;
+  width: 100px;
+  line-height: 1.6;
+  margin: 0 auto;
+  color: white;
+  }  
+/*  business  */
+  section#business .wrap ul li a::before{
+    width: 500px;
+    height: 250px
+  }
 /*  news  */
   section#news{
     
@@ -110,20 +125,8 @@
   section#news .wrap li a h3::before{
   display: none;
   } 
-  section#products .wrap > a{
-    
-  display: flex;
-  background-color: #77ab32;
-  font-size: 24px;
-  justify-content: center;
-  width: 100px;
-  line-height: 1.6;
-  margin: 0 auto;
-  color: white;
-  }
 /*  footer  */
   footer .wrap{
-    
   justify-content: space-between;
   padding: 0 10px;
   }
