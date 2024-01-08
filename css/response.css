@@ -69,6 +69,7 @@
 /*  products  */
   section#products .wrap ul{
   display: initial;
+  margin: 30px auto;
   }
   section#products .wrap ul li{
   width: 100%;
@@ -109,6 +110,17 @@
   section#news .wrap li a h3::before{
   display: none;
   } 
+  section#products .wrap > a{
+    
+  display: flex;
+  background-color: #77ab32;
+  font-size: 24px;
+  justify-content: center;
+  width: 100px;
+  line-height: 1.6;
+  margin: 0 auto;
+  color: white;
+  }
 /*  footer  */
   footer .wrap{
     
