@@ -95,7 +95,7 @@ section#products .wrap ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
+  margin: 10px auto;
 }
 section#products .wrap ul li {
   width: calc(100% / 4);
