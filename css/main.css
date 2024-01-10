@@ -32,23 +32,39 @@ section#promotion .wrap .vo p span{
 
 section#business {
   
+  background-color: #fcf3ea;
 }
 section#business .wrap {
 
 }
 section#business .wrap h2 {
-  
   color: #FE951D;
+  position: relative;
+}
+section#business .wrap h2::after{
+  content:"";
+  display: block;
+  width: 904px;
+  border-top: 1px solid #fe951d;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
 }
 section#business .wrap h3 {
   
+  color: #666;
 }
 section#business .wrap p {
   line-height: 1.6;
   padding-bottom: 25px;
+  color: #999;
 }
 section#business .wrap ul {
 
+  width: 84%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 section#business .wrap ul li {
 
@@ -81,30 +97,51 @@ section#business .wrap ul li a h3 {
 }
 section#products {
 
+  display: flex;
+  align-items: center;
 }
 section#products .wrap {
 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
 }
 section#products .wrap h2 {
   color: #FE951D;
 }
 section#products .wrap>h3 {
-  margin-top: 20px;
+  /*! margin-top: 20px; */
 }
 section#products .wrap ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px auto;
+  justify-content: space-between;
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  column-gap: 10px;
+  overflow: hidden;
 }
-section#products .wrap ul li {
-  width: calc(100% / 4);
+section#products .wrap ul li{
   margin-bottom: 20px;
   display: flex;
-  padding: 30px 0;
+}
+section#products .wrap ul li:nth-child(-n+3) {
+    width: calc(100% / 3 - 20px);
+}
+section#products .wrap ul li:nth-child(n+4) {
+  width: calc(100% / 4 - 30px);
+  margin-bottom: 0;
+
 }
 section#products .wrap ul li a {
   
+  width: 100%;
+}
+section#products .wrap ul li:nth-child(-n+3)  a h3::before{
+  
+  height: 220px;
+  /*! width: calc(100% + 20px / 3); */
+  transform: scale(1.1);
 }
 section#products .wrap ul li:nth-child(1) a h3::before{
   background-image: url(../img/paper_01.jpg);
@@ -129,74 +166,160 @@ section#products .wrap ul li:nth-child(7) a h3::before{
 }
 section#products .wrap ul li a h3:before{
   content: "";
-  width: 300px;
+  width: 100%;
   height: 150px;
   display: block;
   background-size: cover;
   background-position: center;
+  margin-bottom: 11px;
 }
 section#products .wrap ul li a h3{
-  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #222;
+  /*! overflow: hidden; */
 }
-section#products .wrap ul li a h3 p{
-  
+section#products .wrap ul li a p{
+  opacity: 0.7;
+  font-weight: 300;
+  padding: 5px 0;
+}
+section#products .wrap ul li a p br{
+  display: none
 }
 section#products .wrap>a{
   display: none;
 }
 section#news {
-
+  background-color: #fcf3ea;
 }
-section#news .wrap:before{
-  content: "";
-  background-color: #ffc048;
-  width: 1910px;
-  height: 400px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: -190px;
+section#news .text{
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
-section#news .wrap {
-
-  position: relative;
-}
-section#news .wrap h2 {
+section#news .text h3{
   color: #FE951D;
 }
-section#news .wrap ul {
+section#news .text h5{
+  line-height: 1.6;
+}
+section#news .text p{
+  color: #666;
+}
+section#news .box{
+  gap: 30px;
+}
+section#news .box .left{
 
-  z-index: 2;
 }
-section#news .wrap ul li{
-  margin-top: 20px;
-}
-section#news .wrap ul li a{ 
-
-}
-section#news .wrap li:nth-child(1) a h3:before {
-  background-image: url(../img/news_01.jpg);  
-}
-section#news .wrap li:nth-child(2) a h3:before {
-  background-image: url(../img/news_02.jpg);  
-}
-section#news .wrap li:nth-child(3) a h3:before {
-  background-image: url(../img/news_03.jpg);  
-}
-section#news .wrap li a h3:before {
-  content: ""; 
-  width: 410px;
-  height: 270px;
+section#news .box .left:after{
+  content: "";
   display: block;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url(../img/notice2.png);
   background-size: cover;
   background-position: center;
-  margin-bottom: 15px;
+  margin-top: 10px;
 }
-section#news .wrap ul li a h3{ 
-  font-weight: bold;
-  line-height: 1.3;
+section#news .box .left>span{
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #373737;
+  padding-bottom: 5px;
 }
-section#news .wrap ul li a p{ 
+section#news .box .left span h6{
 
 }
+section#news .box .left span a{
 
+  font-size: 0;
+  background-image: url(../img/more.png);
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+}
+section#news .box .left dl{
+
+}
+section#news .box .left dl dt{
+  display: flex;
+  position: relative;
+  padding-bottom: 15px;
+}
+section#news .box .left dl dt a{
+
+}
+section#news .box .left dl dt a p{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 480px;
+  text-overflow: ellipsis;
+  color: #666;
+}
+section#news .box .left dl dt span{
+
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #878787;
+}
+section#news .box .right{
+
+}
+section#news .box .right:after{
+  content: "";
+  display: block;
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url(../img/news_01.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 10px;
+}
+section#news .box .right>span{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #373737;
+  padding-bottom: 5px;
+}
+section#news .box .right span h6{
+
+}
+section#news .box .right span a{
+  font-size: 0;
+  background-image: url(../img/more.png);
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+}
+section#news .box .right dl{
+
+}
+section#news .box .right dl dt{
+  display: flex;
+  position: relative;
+  padding-bottom: 15px;
+}
+section#news .box .right dl dt a{
+
+}
+section#news .box .right dl dt a p{
+
+  white-space: nowrap;
+  overflow: hidden;
+  width: 480px;
+  text-overflow: ellipsis;
+  color: #666;
+}
+section#news .box .right dl dt span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #878787;
+}
